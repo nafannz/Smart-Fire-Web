@@ -57,6 +57,40 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        safe: {
+          DEFAULT: "hsl(var(--safe))",
+          foreground: "hsl(var(--safe-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger))",
+          foreground: "hsl(var(--danger-foreground))",
+        },
+        temp: {
+          cold: "hsl(var(--temp-cold))",
+          warm: "hsl(var(--temp-warm))",
+          hot: "hsl(var(--temp-hot))",
+        },
+        flame: {
+          low: "hsl(var(--flame-low))",
+          medium: "hsl(var(--flame-medium))",
+          high: "hsl(var(--flame-high))",
+        },
+      },
+      backgroundImage: {
+        'gradient-dashboard': 'var(--gradient-dashboard)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-temp': 'var(--gradient-temp)',
+        'gradient-flame': 'var(--gradient-flame)',
+      },
+      boxShadow: {
+        'glow-safe': 'var(--glow-safe)',
+        'glow-warning': 'var(--glow-warning)',
+        'glow-danger': 'var(--glow-danger)',
+        'card': 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
