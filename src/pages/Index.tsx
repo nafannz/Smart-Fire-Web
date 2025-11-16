@@ -1,10 +1,21 @@
-import TemperatureWidget from '@/components/TemperatureWidget';
+import Protected from '@/components/Protected';
+import FlameGraph from '@/components/FlameGraph';
+
+
 import FlameWidget from '@/components/FlameWidget';
 import StatusOverview from '@/components/StatusOverview';
+import { getESPData } from '@/services/esp';
 import { Thermometer, Flame, Activity } from 'lucide-react';
 
 const Index = () => {
   return (
+  <div className='p-4'>
+    <FlameGraph />
+  </div>
+
+    <div>
+      
+
     <div className="min-h-screen bg-gradient-dashboard p-6">
       {/* Header */}
       <div className="mb-8">
@@ -23,7 +34,7 @@ const Index = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Temperature Widget */}
         <div className="lg:col-span-1">
-          <TemperatureWidget />
+          
         </div>
 
         {/* Flame Detection Widget */}
